@@ -1,8 +1,8 @@
 <template>
-    <div class="p1__main">
+    <div class="main d-block d-md-flex" >
   
-      <div class="p1__card">
-        <h1 class="p1__card-maintext">
+      <div class="left">
+        <h1 class="maintext">
           Smooth <span class="p1__span-business" >Business</span> <br>  Starts With Good <br><span class="p1__span-consultations">Consultations</span>
         </h1>
         <p>
@@ -11,7 +11,7 @@
   
         <div style="display: flex; margin-top: 3rem; margin-bottom: 6rem;">
           <v-btn class="p1__card-meetingbtn">Book a meeting</v-btn>
-          <v-btn text class="p1__card-classbtn" >
+          <v-btn text class="p1__card-classbtn">
             <v-icon left dark style="font-size: 2rem !important;">mdi-play-circle-outline</v-icon>
             How we Work
           </v-btn>
@@ -19,23 +19,18 @@
   
         <div>
           <p style="opacity: 0.5; padding-bottom: 2rem;">Trusted by big brands</p>
-
-          <div class="p1__logos">
-            <img src="@/assets/main1logo1.png" />
-            <img src="@/assets/main1logo2.png" />
-            <img src="@/assets/main1logo3.png" />
-            <img src="@/assets/main1logo4.png" />
-
-      
+          <div class="logos">
+            <img class="logos-item" src="@/assets/main1logo1.png" />
+            <img class="logos-item" src="@/assets/main1logo2.png" />
+            <img class="logos-item" src="@/assets/main1logo3.png" />
+            <img class="logos-item" src="@/assets/main1logo4.png" />
           </div>
         </div>
-  
-  
-  
-  
       </div> 
+
+
+      <img src="@/assets/HeaderImage.png" class="i"/>
   
-      <img src="@/assets/HeaderImage.png" class="p1__image"/>
       
     </div>
     
@@ -48,29 +43,37 @@
   }
   </script>
   
-  <style>
-    .p1__main{
-      display: flex;
+  <style scoped lang="scss">
+    .main{ 
       justify-content: space-between;
       margin-bottom: 4rem;
-      height: 90vh;
+      width: 100vw;
+      overflow: none;
+      max-width: 100vw;
+      height: auto;
     }
-    .p1__card{
-      width: 638px;
-      height: 434px;
+    .left{
+      width: 40rem;
       padding-top: 2rem;
-      padding-left: 66px;
+      max-width: 100vw;
     }
-  .p1__card-maintext{
-    font-size: 64px;
+  .maintext{
+    font-size: 3.5rem;
     text-align: center;
     font-family: 'Merriweather';
     font-weight: 700;
-    line-height: 86px;
+    line-height: 5rem;
     margin-bottom: 2rem;
+    max-width: 100vw;
+
   }
-  .p1__image{
-    width: 685px;
+  .i{
+    // height: 400px;
+
+
+    // height: auto;
+    width: 43rem;
+    max-width: 100vw;
   }
   .p1__span-business{
     background-image: url('@/assets/businessbanner.png');
@@ -93,10 +96,17 @@
     padding: 2rem !important;
     text-transform: none;
   }
-  .p1__logos{
+  .logos{
     opacity: 0.8;
     display: flex;
     justify-content: space-between;
+    max-width: 100vw;
+
+    &-item{
+      width: 6vw;
+      object-fit: contain;
+      
+    }
   }
   </style>
   

@@ -35,7 +35,23 @@
                         Marketing Strategy</h2>
                     <p class='card-p'>Every successful digital marketing campaign must be driven. This provides a clear path to </p>
                     <p class='card-p'>Discover More <v-icon color='white'>mdi-arrow-right</v-icon></p>
+                </div> 
+            </div>
+            <div class='card'>
+                <div style='display: block;'>
+                    <h2> 
+                        <img class='card-icon' src='@/assets/keyicon.svg'/>
+
+                        Problem Solving</h2>
+                    <p class='card-p'>Every successful digital marketing campaign must be driven. This provides a clear path to </p>
+                    <p class='card-p'>Discover More <v-icon color='white'>mdi-arrow-right</v-icon></p>
                 </div>
+            </div>
+            <div class='banner'>
+                <h1 class='banner-h1'>
+                    Hey! We can help you to take your business next level
+                </h1>
+                <v-btn class='banner-btn'>Let's Discuss</v-btn>
             </div>
 
         </div>
@@ -50,18 +66,41 @@ export default {
 <style scoped lang="scss">
 .main{
     background-image: url('@/assets/page3background.png');
+    background-size: cover;
     width: 100vw;
-    height: 95vh;
-    margin-top: 10vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
+    padding-top: 7rem;
+}
+.banner{
+    background-color: #F6E96F ;
+    width: 811px;
+    height: 234px;
+    margin-right: 34px;
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-h1{
+        font-family: 'Inter';
+        font-size: 2.5rem;
+        width: 27rem;
+    }
+    &-btn{
+    background-color: black !important;
+    color: white !important;
+    padding: 2rem !important;
+    text-transform: none;
+
+    }
 }
 .bottom{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .header{
     text-align: center;
@@ -73,10 +112,11 @@ export default {
 
     &-h1{
         font-size: 3rem;
+        margin-bottom: 1rem;
     }
     &-p{
         opacity: 0.5;
-        width: 40vw;
+        width: 30vw;
     }
     &__you{
         position: relative;
@@ -95,6 +135,8 @@ export default {
     }
 }
 .card{
+    margin-right: 34px;
+    margin-top: 34px;
     background-color: #2c2c2c;
     color: white;
     height: 234px;

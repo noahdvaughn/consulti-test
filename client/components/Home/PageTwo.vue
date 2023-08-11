@@ -60,6 +60,9 @@ export default {
 </script>
 <style scoped lang="scss">
 
+.main{
+    margin-bottom: 10vh;
+}
 
 .card__stack-number{
     width: 0rem;

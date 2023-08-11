@@ -4,6 +4,7 @@
     <StatsBar />
     <HomePageTwo />
     <HomePageThree />
+    <HomePageFour />
   </div>
 </template>
 
