@@ -61,11 +61,9 @@ export default {
 <style scoped lang="scss">
 
 .main{
-   
-    margin-bottom: 10vh;
+    margin-bottom: 3rem;
     width: 100vw;
     justify-content: space-around;
-
 }
 
 .card__stack-number{

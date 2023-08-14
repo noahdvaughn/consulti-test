@@ -8,22 +8,56 @@
                 <v-btn class='header-btn' light>Book a FREE Call </v-btn>
                 <img right class='header-icon' src="@/assets/phone.png"/>
             </div>
-            <img class='header-arrow' src='@/assets/swirlarrow.png'/>
-            <img class='header-scribble' src='@/assets/scribble.png'/>
+            <img class='header-arrow d-none d-md-flex' src='@/assets/swirlarrow.png'/>
+            <img class='header-scribble d-none d-md-flex' src='@/assets/scribble.png'/>
         </div>
-        <div class='content'>
-            <div>
+        <div class='content d-block d-md-flex'>
+
+
+            <div class='stack'>
+
                 <img class='content-consulti' src='@/assets/consulti.png' />
+
                 <p>Consulti is a digital business consulting agency based in New York, USA</p>
-                <v-text-field label='Enter your email' outlined class='content-email' hide-details>
-                    <template v-slot:append>
+                <div>
+                    <v-text-field label='Enter your email' class='content-email' hide-details solo>
+                        <template v-slot:append>
+                            <v-btn class='subscribeBtn'>Subscribe</v-btn>
+                        </template>
+                    </v-text-field>
 
-                        <v-btn class='subscribeBtn'>Subscribe</v-btn>
 
-                    </template>
-                </v-text-field>
+                </div>
+
+            </div>
+
+            <div class='stack'>
+                <h2>Services</h2>
+                <p>Business Consulting</p>
+                <p>Strategy Analysis</p>
+                <p>Competative Analysis</p>
+                <p>Problem Solving</p>
+            </div>
+            <div class='stack'>
+                <h2>About Us</h2>
+                <p>Our Mission</p>
+                <p>Our Vission</p>
+                <p>Advisor</p>
+                <p>Talk To Us</p>
+            </div>
+            <div class='stack'>
+                <h2>Contact Info</h2>
+                <p>455 West Orchard Street <br> Kings Mountain, NC 280867</p>
+                <h3>
+                    <v-icon color='#F6E96F'>mdi-phone</v-icon>
+                    +088 (246) 642-27-10</h3>
+                <h3>
+                    <v-icon color='#F6E96F'>mdi-email</v-icon>
+                    example@mail.com</h3>
+               
             </div>
         </div>
+        <p class='copyright'>© 2022 Consulti All Rights Reserved</p>
         
     </div>
 </template>
@@ -43,11 +77,14 @@ export default {
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    height: 30rem;
+    padding: 4rem 0;
+    position: relative;
     &-h1{
         color: white;
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
+        margin-bottom: 3rem;
+        width: 70vw;
     }
     &-container{
         display: flex;
@@ -76,7 +113,7 @@ export default {
         bottom: 4rem;
     }
     &-scribble{
-        
+        position: absolute;
         left: 0;
         bottom: 0;
     }
@@ -84,28 +121,44 @@ export default {
 
 }
 .content{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+    border-bottom: 2px solid rgba(123, 123, 123, 0.3);
 
 
     &-consulti{
         width: 9rem;
         object-fit: contain;
-        padding-top: 0 !important;
-        margin-top: 0 !important;
+      
     }
     &-email{
-        display: flex !important;
-        align-items: center !important;
+        border: 1px solid #c2c2c2 !important;
+        border-radius: 0;
+        opacity: 0.9;
+        
     }
 }
 .subscribeBtn{
     background-color: #F6E96F !important;
     border-radius: 0;
     text-transform: none;
-    padding: 1.5rem !important;
+    // padding: 1.5rem !important;
     align-self: center;
-    // padding-top: 0;
-    margin-bottom: 1rem;
-    // margin-top: -1rem;
+    margin: 0.5rem 0;
+}
+.stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 3rem;
+    height: 13rem;
+}
+.copyright{
+    padding: 1rem 0;
+    text-align: center;
+    opacity: 0.7;
 }
     
 </style>

@@ -2,18 +2,20 @@
   <div>
     <HomePageOne />
     <StatsBar />
-    <HomePageTwo />
-    <HomePageThree />
+    <SolutionPage />
+    <ServicesPage/>
     <HomePageFour />
-    <HomePageFive/>
+    <ClientTestimonies/>
     <HomePageSix />
-    <HomePageSeven />
+    <ContactForm/>
     <Footer/>
   </div>
 </template>
 
 <script>
+
 export default {
+    
 }
 </script>
 <style >

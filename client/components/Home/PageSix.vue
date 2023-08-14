@@ -78,7 +78,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100vw;
+    // max-width: 70vw;
 
     &-h1{
         font-size: 2.5rem;
@@ -87,6 +87,9 @@ export default {
     &-background{
         width: 40rem;
         height: 30rem;
+        max-width: 70vw;
+        // max-height: 60vh;
+
 
         background-color: #BDBDBD ;
         border-radius: 10px;

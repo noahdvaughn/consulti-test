@@ -62,8 +62,9 @@ export default {
             font-size: 2.5rem;
         }
         &-h2{
-            font-weight: 200;
+            font-weight: 400;
             font-size: 2rem;
+            background-size: 35%;
             font-style: italic;
             background-image: url('@/assets/dropline.png');
             background-position: -1rem 1.25rem;

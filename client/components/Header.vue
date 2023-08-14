@@ -1,8 +1,10 @@
 <template>
     <div class="main">
 
-       
+        <nuxt-link to="/" class="link">
+        
             <img src="@/assets/consulti.png" class="logo"/>
+        </nuxt-link>
         
 
 
@@ -17,11 +19,14 @@
                 </v-btn>
             </template>
             <v-list  class="">
+                <nuxt-link to="/" class="link">
+
                         <v-list-item >
                             <v-list-item-title @click=""  class="">
                                 Home V1
                             </v-list-item-title>
                         </v-list-item>
+                        </nuxt-link>
                         <v-list-item>
                             <v-list-item-title @click="" class="">
                                 Home V2
@@ -39,12 +44,15 @@
                     </v-icon>
                 </v-btn>
             </template>
-            <v-list  class="">
-                        <v-list-item >
-                            <v-list-item-title @click=""  class="">
-                                About Us
-                            </v-list-item-title>
-                        </v-list-item>
+            <v-list  >
+                <nuxt-link to="/about" class="link">
+                <v-list-item >
+                    <v-list-item-title @click=""  class="">
+                                 About Us
+                               
+                                </v-list-item-title>
+                            </v-list-item>
+                        </nuxt-link>
                      
                 </v-list>
                 </v-menu>
@@ -59,31 +67,43 @@
                 </v-btn>
             </template>
             <v-list  class="">
+                    <nuxt-link to="/services" class="link">
+
                         <v-list-item >
                             <v-list-item-title @click=""  class="">
                                 Services V1
                             </v-list-item-title>
                         </v-list-item>
+                    </nuxt-link>
                         <v-list-item>
                             <v-list-item-title @click="" class="">
                                 Services V2
                             </v-list-item-title>
                         </v-list-item> 
+                     <nuxt-link to="/servicedetails" class="link">
+
                         <v-list-item>
                             <v-list-item-title @click="" class="">
                                 Services Details
                             </v-list-item-title>
                         </v-list-item> 
+                     </nuxt-link>
                 </v-list>
                 </v-menu>
             </div>
+
+            <nuxt-link to="/advisors" class="link">
             <div class="navbar-item">
                 <p>Advisor</p>
-    
             </div>
+            </nuxt-link>
+
+            <nuxt-link to="/blog" class="link">
             <div class="navbar-item">
                 <p>Blog</p>
             </div>
+            </nuxt-link>
+
             <div class="navbar-item">
                 <p>Contact</p>
             </div>
@@ -110,17 +130,21 @@ export default {
     align-items: center;
     top: 0;
     position: sticky;
+    
     background-color: white;
     height: 5rem;
     z-index: 2;
 }
+.link{
+    text-decoration: none;
+    color: black;
+}
 .logo{
-width: 10vw;
+width: 10rem;
 height: auto;
 object-fit: contain;
 }
 .navbar{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -134,7 +158,10 @@ object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10vw;
+    text-transform: none;
+    margin: 0 1rem;
+    width: 5rem;
+
 }
 .header__nav__item__chevron{
     color: black;

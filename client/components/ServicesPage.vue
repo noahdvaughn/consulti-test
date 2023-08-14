@@ -73,6 +73,7 @@ export default {
     flex-direction: column;
     align-items: center;
     padding-top: 7rem;
+    margin-bottom: 3rem;
 }
 .banner{
     background-color: #F6E96F ;
