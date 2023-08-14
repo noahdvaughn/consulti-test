@@ -5,7 +5,7 @@
             <p class='header-p'>We serve services as per your needs. Here you will get all of the services list that we will provide you</p>
         </div>
 
-        <div class='bottom'>
+        <div class='bottom d-block d-md-flex'>
 
             <div class='card'>
                 <div style='display: block;'>
@@ -68,7 +68,7 @@ export default {
     background-image: url('@/assets/page3background.png');
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,10 +83,11 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 100vw;
 
     &-h1{
         font-family: 'Inter';
-        font-size: 2.5rem;
+        font-size: 2rem;
         width: 27rem;
     }
     &-btn{
@@ -98,9 +99,12 @@ export default {
     }
 }
 .bottom{
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 10rem;
+
 }
 .header{
     text-align: center;

@@ -5,6 +5,10 @@
     <HomePageTwo />
     <HomePageThree />
     <HomePageFour />
+    <HomePageFive/>
+    <HomePageSix />
+    <HomePageSeven />
+    <Footer/>
   </div>
 </template>
 

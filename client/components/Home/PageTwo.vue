@@ -1,5 +1,5 @@
 <template lang="">
-    <div class='main'>
+    <div class='main d-block d-md-flex'>
 
         <div class='left'>
             <div class='card-text'>
@@ -46,8 +46,8 @@
 
                 </div>
             </div>
-            <span class='card-img'>
-                <img src='@/assets/scribble.png' class='card-scribble'/>
+            <span class='card-img d-none d-md-flex'>
+                <img src='@/assets/scribble.png' class='card-scribble '/>
             </span>
         </div>
         
@@ -61,7 +61,11 @@ export default {
 <style scoped lang="scss">
 
 .main{
+   
     margin-bottom: 10vh;
+    width: 100vw;
+    justify-content: space-around;
+
 }
 
 .card__stack-number{
@@ -76,7 +80,7 @@ export default {
 				  -1px -1px 0 black;
     font-family: 'Inter';
     position: absolute;
-    margin-left: -2rem;
+    margin-left: -2vw;
     opacity: 0.3;
     z-index: 0;
 }
@@ -100,7 +104,7 @@ export default {
 }
 
 .left{
-    margin-left: 8rem;
+    // margin-left: 8rem;
     margin-top: 8rem;
     display: flex;
 }
