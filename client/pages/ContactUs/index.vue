@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <BlogPageOne />
+        <ContactUsPageOne />
         <Footer />
         
     </div>

@@ -32,28 +32,28 @@
             </div>
 
             <div class='stack'>
-                <h2>Services</h2>
+                <p class='p4'>Services</p>
                 <p>Business Consulting</p>
                 <p>Strategy Analysis</p>
                 <p>Competative Analysis</p>
                 <p>Problem Solving</p>
             </div>
             <div class='stack'>
-                <h2>About Us</h2>
+                <p class='p4'>About Us</p>
                 <p>Our Mission</p>
                 <p>Our Vission</p>
                 <p>Advisor</p>
                 <p>Talk To Us</p>
             </div>
             <div class='stack'>
-                <h2>Contact Info</h2>
+                <p class='p4'>Contact Info</p>
                 <p>455 West Orchard Street <br> Kings Mountain, NC 280867</p>
-                <h3>
+                <p class='p4'>
                     <v-icon color='#F6E96F'>mdi-phone</v-icon>
-                    +088 (246) 642-27-10</h3>
-                <h3>
+                    +088 (246) 642-27-10</p>
+                <p class='p4'>
                     <v-icon color='#F6E96F'>mdi-email</v-icon>
-                    example@mail.com</h3>
+                    example@mail.com</p>
                
             </div>
         </div>

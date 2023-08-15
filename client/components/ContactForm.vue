@@ -2,37 +2,37 @@
     <div class='main  d-md-flex'>
 
         <div class='left'>
-            <h1 class='left-h1'>Ready to discuss projetc?</h1>
+            <h2 class='left-h1'>Ready to discuss projetc?</h2>
             <h2 class='left-h2'>Drop us a line</h2>
             <div>
                 <v-text-field label="Your Name*" variant="underlined"></v-text-field>
                 <v-text-field label="Type Your Email*" variant="underlined"></v-text-field>
                 <v-text-field label="Write Down You Query*" variant="underlined"></v-text-field>
-                <v-btn class='left-button'>Send a Message</v-btn>
+                <v-btn dark class='btn'>Send a Message</v-btn>
                 
             </div>
         </div>
 
         <div class='right'>
-            <h2 class='right-underline'>How does you guys work? 
+            <p class='right-underline p2'>How does you guys work? 
                 <v-icon right class='right-icon'>mdi-chevron-down</v-icon> 
-            </h2>
+            </p>
             
-            <h2 class='right-underline'>What's your vision, mission? 
+            <p class='right-underline p2'>What's your vision, mission? 
                 <v-icon right class='right-icon'>mdi-chevron-down</v-icon>
-            </h2>
+            </p>
 
-            <h2 class='right-underline'>How much experienced you guys are? 
+            <p class='right-underline p2'>How much experienced you guys are? 
                 <v-icon right class='right-icon'>mdi-chevron-down</v-icon>
-            </h2>
+            </p>
 
-            <h2 class='right-underline'>What's your team working process? 
+            <p class='right-underline p2'>What's your team working process? 
                 <v-icon right class='right-icon'>mdi-chevron-down</v-icon>
-            </h2>
+            </p>
 
-            <h2 class='right-nounderline'>How does you guys work? 
+            <p class='right-nounderline p2'>How does you guys work? 
                 <v-icon right class='right-icon'>mdi-chevron-down</v-icon>
-            </h2>
+            </p>
 
         </div>
         

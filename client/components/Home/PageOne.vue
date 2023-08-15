@@ -10,8 +10,8 @@
         </p>
   
         <div style="display: flex; margin-top: 3rem; margin-bottom: 6rem;">
-          <v-btn class="card-meetingbtn">Book a meeting</v-btn>
-          <v-btn text class="card-classbtn">
+          <v-btn dark class="btn">Book a meeting</v-btn>
+          <v-btn text class="btn">
             <v-icon left dark style="font-size: 2rem !important;">mdi-play-circle-outline</v-icon>
             How we Work
           </v-btn>
@@ -88,10 +88,7 @@
     padding: 2rem !important;
     margin-right: 1rem;
   }
-  .card-classbtn{
-    padding: 2rem !important;
-    text-transform: none;
-  }
+  
   .logos{
     opacity: 0.8;
     display: flex;

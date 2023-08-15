@@ -19,19 +19,28 @@
                 </v-btn>
             </template>
             <v-list  class="">
-                <nuxt-link to="/" class="link">
-
+                    <nuxt-link to="/" class="link">
                         <v-list-item >
                             <v-list-item-title @click=""  class="">
-                                Home V1
+                                Home
                             </v-list-item-title>
                         </v-list-item>
-                        </nuxt-link>
-                        <v-list-item>
-                            <v-list-item-title @click="" class="">
-                                Home V2
+                    </nuxt-link>
+                    <nuxt-link to="/" class="link">
+                        <v-list-item >
+                            <v-list-item-title @click=""  class="">
+                                Contact
                             </v-list-item-title>
-                        </v-list-item> 
+                        </v-list-item>
+                    </nuxt-link>
+                    <nuxt-link to="/" class="link">
+                        <v-list-item >
+                            <v-list-item-title @click=""  class="">
+                                FAQ
+                            </v-list-item-title>
+                        </v-list-item>
+                    </nuxt-link>
+                   
                 </v-list>
                 </v-menu>
             </div>
@@ -75,13 +84,8 @@
                             </v-list-item-title>
                         </v-list-item>
                     </nuxt-link>
-                        <v-list-item>
-                            <v-list-item-title @click="" class="">
-                                Services V2
-                            </v-list-item-title>
-                        </v-list-item> 
+                      
                      <nuxt-link to="/servicedetails" class="link">
-
                         <v-list-item>
                             <v-list-item-title @click="" class="">
                                 Services Details
@@ -104,9 +108,14 @@
             </div>
             </nuxt-link>
 
+
+        <nuxt-link to="/contactus" class="link">
             <div class="navbar-item">
                 <p>Contact</p>
             </div>
+
+
+        </nuxt-link>
         </div>
 
         <div class="buttons">
@@ -130,7 +139,6 @@ export default {
     align-items: center;
     top: 0;
     position: sticky;
-    
     background-color: white;
     height: 5rem;
     z-index: 2;

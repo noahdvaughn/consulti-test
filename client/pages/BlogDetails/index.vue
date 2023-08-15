@@ -1,8 +1,7 @@
 <template lang="">
     <div>
-        <BlogPageOne />
+        <BlogDetailsPageOne />
         <Footer />
-        
     </div>
 </template>
 <script>
@@ -10,6 +9,6 @@ export default {
     
 }
 </script>
-<style lang="">
+<style scoped lang="scss">
     
 </style>

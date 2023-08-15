@@ -1,7 +1,7 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h1 class='header-h1'>We Serve Those Services For <span class='header__you'>You</span></h1>
+            <h2 class='header-h2'>We Serve Those Services For <span class='header__you'>You</span></h2>
             <p class='header-p'>We serve services as per your needs. Here you will get all of the services list that we will provide you</p>
         </div>
 
@@ -9,49 +9,49 @@
 
             <div class='card'>
                 <div style='display: block;'>
-                    <h2>  
+                    <p class='p3'>  
                         <img class='card-icon' src='@/assets/charticon.png'/>
 
-                        Competitive Analysis</h2>
+                        Competitive Analysis</p>
                     <p class='card-p'>Every successful digital marketing campaign must be driven. This provides a clear path to </p>
                     <p class='card-p'>Discover More <v-icon color='white'>mdi-arrow-right</v-icon></p>
                 </div>
             </div>
             <div class='card'>
                 <div style='display: block;'>
-                    <h2> 
+                    <p class='p3'> 
                         <img class='card-icon' src='@/assets/magnifyingicon.svg'/>
 
-                        Strategic Planing</h2>
+                        Strategic Planing</p>
                     <p class='card-p'>Every successful digital marketing campaign must be driven. This provides a clear path to </p>
                     <p class='card-p'>Discover More <v-icon color='white'>mdi-arrow-right</v-icon></p>
                 </div>
             </div>
             <div class='card'>
                 <div style='display: block;'>
-                    <h2> 
+                    <p class='p3'> 
                         <img class='card-icon' src='@/assets/bullhornicon.svg'/>
 
-                        Marketing Strategy</h2>
+                        Marketing Strategy</p>
                     <p class='card-p'>Every successful digital marketing campaign must be driven. This provides a clear path to </p>
                     <p class='card-p'>Discover More <v-icon color='white'>mdi-arrow-right</v-icon></p>
                 </div> 
             </div>
             <div class='card'>
                 <div style='display: block;'>
-                    <h2> 
+                    <p class='p3'> 
                         <img class='card-icon' src='@/assets/keyicon.svg'/>
 
-                        Problem Solving</h2>
+                        Problem Solving</p>
                     <p class='card-p'>Every successful digital marketing campaign must be driven. This provides a clear path to </p>
                     <p class='card-p'>Discover More <v-icon color='white'>mdi-arrow-right</v-icon></p>
                 </div>
             </div>
             <div class='banner'>
-                <h1 class='banner-h1'>
+                <p class='banner-h1'>
                     Hey! We can help you to take your business next level
-                </h1>
-                <v-btn class='banner-btn'>Let's Discuss</v-btn>
+                </p>
+                <v-btn dark class='btn'>Let's Discuss</v-btn>
             </div>
 
         </div>
@@ -91,13 +91,7 @@ export default {
         font-size: 2rem;
         width: 27rem;
     }
-    &-btn{
-    background-color: black !important;
-    color: white !important;
-    padding: 2rem !important;
-    text-transform: none;
-
-    }
+   
 }
 .bottom{
     margin-left: auto;
@@ -115,8 +109,7 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    &-h1{
-        font-size: 3rem;
+    &-h2{
         margin-bottom: 1rem;
     }
     &-p{

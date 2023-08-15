@@ -8,22 +8,22 @@
             <div class='d-block d-md-flex talent'>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2 class='talent-h2'>Devon Lane</h2>
+                    <p class='p3'>Devon Lane</p>
                     <p class='talent-p'>CEO & Owner <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard2.png'/>
-                    <h2  class='talent-h2'>Floyd Miles</h2>
+                    <p  class='p3'>Floyd Miles</p>
                     <p class='talent-p'>Digital Marketer <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2  class='talent-h2'>Jane Cooper</h2>
+                    <p  class='p3'>Jane Cooper</p>
                     <p class='talent-p'>HRM <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2  class='talent-h2'>Ronald Richards</h2>
+                    <p  class='p3'>Ronald Richards</p>
                     <p class='talent-p'>Strategist<img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
             </div>

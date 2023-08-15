@@ -1,7 +1,7 @@
 <template lang="">
     <div class='main'>
 
-        <h1>Take A Vital Look At Our Core <br> <span class='working'>Working Process</span></h1>
+        <h2>Take A Vital Look At Our Core <br> <span class='working'>Working Process</span></h2>
 
         <p>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
         <img class='img' src='@/assets/Player.png' />

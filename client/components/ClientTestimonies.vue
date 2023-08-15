@@ -1,6 +1,6 @@
 <template lang="">
     <div class='main d-block'>
-        <h1 class='header-h1'><span class='some'>Some</span> Words From Clients</h1>
+        <h2 class='header-h2'><span class='some'>Some</span> Words From Clients</h2>
         <p class='header-p'>No need to trust our words. Take a loog what our previous clients deedback about CONSULTI</p>
         <div class='feedback d-block d-md-flex'>
 
@@ -69,9 +69,8 @@ margin-left: auto;
 margin-right: auto;
 padding-bottom: 10rem;
 }
-.header-h1{
+.header-h2{
     margin-bottom: 2rem;
-    font-size: 3rem;
 }
 .header-p{
     text-align: center;

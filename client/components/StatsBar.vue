@@ -1,19 +1,19 @@
 <template >
     <div class='main'>
         <div class="stack">
-            <h1>10+</h1>
+            <h2>10+</h2>
             <p>Years Experience</p>
         </div>
         <div class="stack">
-            <h1>99%</h1>
+            <h2>99%</h2>
             <p>Accuracy Rate</p>
         </div>
         <div class="stack">
-            <h1>500+</h1>
+            <h2>500+</h2>
             <p>Positive Reviews</p>
         </div>
         <div class="stack">
-            <h1>600+</h1>
+            <h2>600+</h2>
             <p>Trusted Partners</p>
         </div>
         

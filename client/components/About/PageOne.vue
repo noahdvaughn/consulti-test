@@ -1,14 +1,14 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h1>About Us</h1>
+            <h2>About Us</h2>
             <p>Read more about us. Our vission, mission, success and many other you might love</p>
-            <h3> Home > About</h3>
+            <p class='p4'> Home > About</p>
         </div>
 
     <div class='content d-block d-md-flex'  >
         <div class='left'>
-            <h1>We Lead Your Business <span class='header-to'>To</span> <br> <span class='header-theVictory'>The Victory</span></h1>
+            <h2>We Lead Your Business <span class='header-to'>To</span> <br> <span class='header-theVictory'>The Victory</span></h2>
             <p class='left-p'>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
 
             <div class='left_buttons'>
@@ -37,7 +37,7 @@ export default {
     
 }
 .content{
-    margin: 0 10vw;
+    margin: 0 105px;
     &-img{
         text-align: center;
         max-width: 80vw;

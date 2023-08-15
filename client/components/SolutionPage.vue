@@ -3,7 +3,7 @@
 
         <div class='left'>
             <div class='card-text'>
-                <h1>We Provide The <span class='thebest'> Best <span class='solution'>Solution</span></span> <br> In The Town</h1>
+                <h2>We Provide The <span class='thebest'> Best <span class='solution'>Solution</span></span> <br> In The Town</h2>
                 <p>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
 
 
@@ -12,7 +12,7 @@
                     <div class='card'> 
                         <div class='card__stack'>
                             <h1 class='card__stack-number'>01</h1>
-                            <h1 style='z-index: 1;' >Research</h1>
+                            <h3 style='z-index: 1;' >Research</h3>
                         </div>
                         <p>Research on the business to get core of the problem</p>
                     </div>
@@ -20,7 +20,7 @@
                     <div class='card'>
                         <div class='card__stack'>
                             <h1 class='card__stack-number'>02</h1>
-                            <h1 style='z-index: 1;'>Data Collection</h1>                       
+                            <h3 style='z-index: 1;'>Data Collection</h3>                       
                         </div>
                         <p>Research on the business to get core of the problem</p>
                     </div>
@@ -28,7 +28,7 @@
                     <div class='card'>
                         <div class='card__stack'>
                             <h1 class='card__stack-number'>03</h1>
-                            <h1 style='z-index: 1;'>Targeting</h1>
+                            <h3 style='z-index: 1;'>Targeting</h3>
                         </div>
                         <p>Research on the business to get core of the problem</p>
                     </div>
@@ -37,7 +37,7 @@
                         <div class='card__stack'>
                             <h1 class='card__stack-number'>04</h1>
    
-                            <h1 style='z-index: 1;'>Problem Solution</h1>
+                            <h3 style='z-index: 1;'>Problem Solution</h3>
 
                         </div>
                         <p>Research on the business to get core of the problem</p>
@@ -78,7 +78,8 @@ export default {
 				  -1px -1px 0 black;
     font-family: 'Inter';
     position: absolute;
-    margin-left: -2vw;
+    margin-left: -20px;
+    margin-bottom: -20px;
     opacity: 0.3;
     z-index: 0;
 }

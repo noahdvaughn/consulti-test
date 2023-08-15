@@ -1,23 +1,23 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h1>Competative Analysis</h1>
+            <h2>Competative Analysis</h2>
             <p>Read more about us. Our vission, mission, success and many other you might love</p>
-            <h3> Home > Services > Competative Analysis</h3>
+            <p class='p4'> Home > Services > Competative Analysis</p>
         </div>
 
     <div class='content d-block d-md-flex'  >
         <div class='left'>
-            <h1 class='left-head'>Services</h1>
-            <h2 class='left-item'>Competitive Analysis</h2>
-            <h2 class='left-item'>Strategic Planning</h2>
-            <h2 class='left-item'>Marketing Strategy</h2>
-            <h2 class='left-item'>Problem SolvingQuality</h2>
-            <h2 class='left-item'>Business Consulting</h2>
-            <h2 class='left-item'>Audit & Evaluation</h2>
-            <h2 class='left-item'>Digital Marketing</h2>
-            <h2 class='left-item'>Boost SEO Ranking</h2>
-            <h2 class='left-tail'>Daily Reports</h2>
+            <p class='left-head p1'>Services</p>
+            <p class='left-item p3'>Competitive Analysis</p>
+            <p class='left-item p3'>Strategic Planning</p>
+            <p class='left-item p3'>Marketing Strategy</p>
+            <p class='left-item p3'>Problem SolvingQuality</p>
+            <p class='left-item p3'>Business Consulting</p>
+            <p class='left-item p3'>Audit & Evaluation</p>
+            <p class='left-item p3'>Digital Marketing</p>
+            <p class='left-item p3'>Boost SEO Ranking</p>
+            <p class='left-tail p3'>Daily Reports</p>
 
         </div>
         <div class='right'>
@@ -31,7 +31,7 @@
                 Your personal wealth adviser will consider your finances as a whole to ensure your plans, savings and investments are working hard, and harmoniously together, to achieve your objectives both now and in the future.
             </p>
 
-            <h1 class='right-why'>Why this service is important</h1>
+            <p class='right-why p1'>Why this service is important</p>
 
             <div class='right-service'>
                 <img class='right-icon' src='@/assets/investmenticon.png'/>
@@ -102,6 +102,7 @@ export default {
         font-size: 1.25rem;
         font-weight: 500;
         padding: 2rem 1rem;
+        font-family: "Inter";
 
     }
     &-tail{

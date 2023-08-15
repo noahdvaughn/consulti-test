@@ -3,7 +3,7 @@
         <div class='header'>
             <h1>Services</h1>
             <p>Read more about us. Our vission, mission, success and many other you might love</p>
-            <h3> Home > Services</h3>
+            <p class='p4'> Home > Services</p>
         </div>
 
     </div>

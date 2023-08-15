@@ -1,7 +1,7 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h1 class='header-h1'>Trending Blogs & <span class='header-articles'>Articles</span></h1>
+            <h2 class='header-h2'>Trending Blogs & <span class='header-articles'>Articles</span></h2>
             <p class='header-p'>Read the blog and article inside of consulti. We share tips and tricks to get more succes</p>
         </div>
 
@@ -12,7 +12,7 @@
                 <div class='card-content'>
 
                     <p>UPDATE -</p>
-                    <h1 class='card-h1'>The Art Of Taking Right Decission To Success</h1>
+                    <h2 class='card-h1'>The Art Of Taking Right Decission To Success</h2>
                     <p>Learn how to take the right decission in critical time to get succes and how to overcome bad times.</p>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class='card-content'>
 
                     <p>ADVICE -</p>
-                    <h1 class='card-h1'>Learn How We Plan UX Research</h1>
+                    <h2 class='card-h1'>Learn How We Plan UX Research</h2>
                     <p>Learn how to take the right decission in critical time to get succes and how to overcome bad times.</p>
                 </div>
             </div>
@@ -43,8 +43,7 @@ export default {
 }
 .header{
     margin-bottom: 4rem;
-    &-h1{
-        font-size: 3rem;
+    &-h2{
         margin-bottom: 4rem;
     }
     &-p{

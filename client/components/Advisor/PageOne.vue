@@ -1,9 +1,9 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h1>Our Advisors</h1>
+            <h2>Our Advisors</h2>
             <p>Read more about us. Our vission, mission, success and many other you might love</p>
-            <h3> Home > Advisor</h3>
+            <p class='p4'> Home > Advisor</p>
         </div>
 
     </div>

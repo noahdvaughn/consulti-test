@@ -1,51 +1,51 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h1 class='header-h1'>Let's Meet Our <span class='header-talents'>Talents</span></h1>
+            <h2 class='header-h2'>Let's Meet Our <span class='header-talents'>Talents</span></h2>
 
             <p class='header-p'>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
 
             <div class='d-block d-md-flex talent'>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2 class='talent-h2'>Devon Lane</h2>
+                    <p class='p3'>Devon Lane</p>
                     <p class='talent-p'>CEO & Owner <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard2.png'/>
-                    <h2  class='talent-h2'>Floyd Miles</h2>
+                    <p  class='p3'>Floyd Miles</p>
                     <p class='talent-p'>Digital Marketer <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2  class='talent-h2'>Jane Cooper</h2>
+                    <p  class='p3'>Jane Cooper</p>
                     <p class='talent-p'>HRM <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2  class='talent-h2'>Ronald Richards</h2>
+                    <p  class='p3'>Ronald Richards</p>
                     <p class='talent-p'>Strategist<img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
             </div>
             <div class='d-block d-md-flex talent'>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2 class='talent-h2'>Devon Lane</h2>
+                    <p class='p3'>Devon Lane</p>
                     <p class='talent-p'>CEO & Owner <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard2.png'/>
-                    <h2  class='talent-h2'>Floyd Miles</h2>
+                    <p  class='p3'>Floyd Miles</p>
                     <p class='talent-p'>Digital Marketer <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2  class='talent-h2'>Jane Cooper</h2>
+                    <p  class='p3'>Jane Cooper</p>
                     <p class='talent-p'>HRM <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
                 <div>
                     <img src='@/assets/TalentCard.png'/>
-                    <h2  class='talent-h2'>Ronald Richards</h2>
+                    <p  class='p3'>Ronald Richards</p>
                     <p class='talent-p'>Strategist<img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
             </div>
@@ -90,20 +90,15 @@ export default {
     content: '';
    }
 
-   &-h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-align: center;
-   }
    &-p{
     text-align: center;
     width: 30rem;
-    font-size: 1rem;
    }
 
 }
 .talent{
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100vw;
     justify-content: space-around;
 
