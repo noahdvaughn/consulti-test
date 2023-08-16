@@ -34,6 +34,9 @@ export default {
   padding: 20px 30px !important;
 
 }
+.inter{
+font-family: 'Inter' !important;
+}
 .mb1{
   margin-bottom: 1rem !important
 }
@@ -48,7 +51,6 @@ h1{
 }
 h2{
   font-family: 'Merriweather';
-
   font-size: 42px !important;
   font-weight: bold;
 }
@@ -68,7 +70,6 @@ h3{
   font-size: 20px !important;
   font-weight: bold;
   font-family: 'Merriweather';
-
 }
 .p4{
   font-size: 16px !important;
@@ -76,13 +77,14 @@ h3{
 }
 p{
   font-size: 16px !important; 
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 @media (max-width: 960px){
-  h1{font-size: 40px !important;}
+  h1{font-size: 32px !important;}
+  h2{
+    font-size: 32px !important;
+  }
 }
-h2{
-  font-size: 32px !important;
-}
+
 
 </style>

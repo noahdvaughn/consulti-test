@@ -66,16 +66,17 @@ export default {
 .content{
     margin: 0 10vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header{
     background-color: black;
     color: white;
-    height: 20rem;
+    height: 352px;
     padding: 3rem 0;
     margin-bottom: 6rem;
-    width: 100vw;
+    
+    max-width: 100vw ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -84,8 +85,9 @@ export default {
 
 .left{
     border-radius: 0.5rem;
-    width: 30%;
-    height: 100%;
+    width: 391px;
+    height: 869px;
+    max-width: 80vw;
     box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 50px 0 rgba(0, 0, 0, 0.1);
     &-head{
         background-color: black;
@@ -99,21 +101,24 @@ export default {
 
     &-item{
         border-bottom: 1px solid black;
-        font-size: 1.25rem;
+        font-weight: 500;
+        height: 86px;
+        padding: 30px 20px;
+        margin: 0;
+        font-family: "Inter";
+
+    }
+    &-tail{
         font-weight: 500;
         padding: 2rem 1rem;
         font-family: "Inter";
 
     }
-    &-tail{
-        font-size: 1.25rem;
-        font-weight: 500;
-        padding: 2rem 1rem;
-    }
    
 }
 .right{
-    width: 50%;
+    width: 711px;
+    max-width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

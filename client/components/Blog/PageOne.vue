@@ -9,7 +9,7 @@
 
         <div class='content d-block d-md-flex'>
 
-            <div class='left'>
+            <div class='left shadow1'>
                 <v-text-field solo label='Type to search...' prepend-inner-icon="mdi-magnify">
                 </v-text-field>
 
@@ -207,6 +207,7 @@ export default {
     max-width: 80vw;
     padding: 50px 5px;
     width: 390px !important;
+    max-width: 100vw;
     margin-right: 2rem;
 
    
@@ -233,7 +234,6 @@ export default {
    &-p{
     font-size: 14px !important;
    }
-   box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 50px 0 rgba(0, 0, 0, 0.1);
 
 }
 .card{
@@ -295,10 +295,11 @@ export default {
 .header{
     background-color: black;
     color: white;
-    height: 20rem;
+    height: 352px;
     padding: 3rem 0;
     margin-bottom: 6rem;
     width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -329,6 +330,17 @@ export default {
     height: fit-content;
     margin-bottom: 10px;
   }
+  .content{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .left{
+    margin: 0;
+  }
+  .right{
+    margin: auto;
+  }
+
 }
 
 </style>

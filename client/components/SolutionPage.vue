@@ -2,12 +2,11 @@
     <div class='main d-block d-md-flex'>
 
         <div class='left'>
-            <div class='card-text'>
-                <h2>We Provide The <span class='thebest'> Best <span class='solution'>Solution</span></span> <br> In The Town</h2>
-                <p>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
+            
+                <h2 class='left-title'>We Provide The <span class='left-theBest'> Best <span class='left-solution'>Solution</span></span> <br> In The Town</h2>
+                <p class='left-p'>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
 
-
-                <div class='card__container'>
+                <div class='left-container d-block d-md-flex'>
 
                     <div class='card'> 
                         <div class='card__stack'>
@@ -45,11 +44,12 @@
 
 
                 </div>
-            </div>
-            <span class='card-img d-none d-md-flex'>
-                <img src='@/assets/scribble.png' class='card-scribble '/>
-            </span>
+            
+
         </div>
+        <span class='card-image d-none d-md-flex'>
+            <img src='@/assets/scribble.png' class='card-scribble '/>
+        </span>
         
     </div>
 </template>
@@ -62,8 +62,49 @@ export default {
 
 .main{
     margin-bottom: 3rem;
-    width: 100vw;
     justify-content: space-around;
+}
+.left{
+    width: 693px;
+    max-width: 80vw;
+    height: auto;
+    margin-top: 8rem;
+    display: block;
+    &-solution {
+        position: relative;
+        display: inline-block;
+    }
+    &-solution:after{  
+        background-image: url('@/assets/solutionflourish.png');   
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: -30px;
+        height: 30px;
+        width: 30px;
+        content: '';
+    }
+    &-theBest{
+        padding-bottom: 7px;
+        background-image: url('@/assets/solution.png');
+        background-size: contain;
+        background-position: bottom 0px right 50%; 
+    }
+    &-title{
+        line-height: 70px ;
+        font-weight: 700;
+    }
+    &-p{
+        width: 495px;
+        max-width: 80vw;
+
+
+    }
+    &-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
 }
 
 .card__stack-number{
@@ -83,68 +124,48 @@ export default {
     opacity: 0.3;
     z-index: 0;
 }
-
-.card__container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 .card{
-    width: 18rem;
+    width: 285px;
+    height: 136px;
+    max-width: 80vw;
 
     &__stack{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-
-
+        margin-top: 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
-}
-
-.left{
-    // margin-left: 8rem;
-    margin-top: 8rem;
-    display: flex;
-}
-.card-text{
-    width: 693px;
-}
-.card-img{
-    background-color: #BDBDBD;
-    height: 600px;
-    width: 495px;
-    margin-left: 4rem;
-    position: relative;
-    display: inline-block;
-}
-.card-scribble{
-        bottom: -2rem;
-        left: -4rem;
-        height: 10rem;
-        display: block;
-        position: absolute;
-        content: '';     
-    }    
-    .solution {
+    &-image{
+        background-color: #BDBDBD;
+        height: 600px;
+        width: 495px;
+        margin-left: 4rem;
         position: relative;
         display: inline-block;
     }
-    .solution:after{  
-        background-image: url('@/assets/solutionflourish.png');   
+    &-scribble{
+        bottom: -2rem;
+        left: -4rem;
+        height: 141px;
+        width: 104px;
         display: block;
         position: absolute;
-        top: -10px;
-        right: -30px;
-        height: 30px;
-        width: 30px;
-        content: '';
+        content: ''; 
     }
-    .thebest{
-    padding-bottom: 7px;
-    background-image: url('@/assets/solution.png');
-    background-size: contain;
-    background-position: bottom 0px right 50%; 
+}
+
+@media (max-width: 960px){
+
+    .left{
+        margin: 0 auto;
+        text-align: center;
     }
+    .card{
+        // max-width: 100vw;
+        text-align: start;
+    }
+
+}
+
     
 </style>

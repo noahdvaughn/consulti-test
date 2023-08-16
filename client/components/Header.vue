@@ -26,14 +26,14 @@
                             </v-list-item-title>
                         </v-list-item>
                     </nuxt-link>
-                    <nuxt-link to="/" class="link">
+                    <nuxt-link to="/contactus" class="link">
                         <v-list-item >
                             <v-list-item-title @click=""  class="">
                                 Contact
                             </v-list-item-title>
                         </v-list-item>
                     </nuxt-link>
-                    <nuxt-link to="/" class="link">
+                    <nuxt-link to="/FAQ" class="link">
                         <v-list-item >
                             <v-list-item-title @click=""  class="">
                                 FAQ
@@ -80,7 +80,7 @@
 
                         <v-list-item >
                             <v-list-item-title @click=""  class="">
-                                Services V1
+                                Services
                             </v-list-item-title>
                         </v-list-item>
                     </nuxt-link>

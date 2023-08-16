@@ -1,7 +1,7 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h2 class='header-h2'>We Serve Those Services For <span class='header__you'>You</span></h2>
+            <h2 class='mb1'>We Serve Those Services For <span class='header__you'>You</span></h2>
             <p class='header-p'>We serve services as per your needs. Here you will get all of the services list that we will provide you</p>
         </div>
 
@@ -48,9 +48,9 @@
                 </div>
             </div>
             <div class='banner'>
-                <p class='banner-h1'>
+                <h2 class='banner-h1'>
                     Hey! We can help you to take your business next level
-                </p>
+                </h2>
                 <v-btn dark class='btn'>Let's Discuss</v-btn>
             </div>
 
@@ -88,7 +88,7 @@ export default {
 
     &-h1{
         font-family: 'Inter';
-        font-size: 2rem;
+        
         width: 27rem;
     }
    
@@ -109,12 +109,9 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    &-h2{
-        margin-bottom: 1rem;
-    }
     &-p{
         opacity: 0.5;
-        width: 30vw;
+        width: 595px;
     }
     &__you{
         position: relative;

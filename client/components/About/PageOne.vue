@@ -6,7 +6,7 @@
             <p class='p4'> Home > About</p>
         </div>
 
-    <div class='content d-block d-md-flex'  >
+    <div class='content d-block d-md-flex'>
         <div class='left'>
             <h2>We Lead Your Business <span class='header-to'>To</span> <br> <span class='header-theVictory'>The Victory</span></h2>
             <p class='left-p'>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
@@ -17,7 +17,7 @@
                 <v-btn text class='left_buttons-vission'>Our Value</v-btn>
             </div>
 
-            <p>
+            <p class='mb3'>
                 Get the proper business consultation from CONSULTI. We are here to consult you as per your business need.Get the proper business consultation from CONSULTI.Get the proper business consultation from CONSULTI.
 
             </p>
@@ -49,10 +49,11 @@ export default {
 .header{
     background-color: black;
     color: white;
-    height: 20rem;
+    height: 352px;
     padding: 3rem 0;
     margin-bottom: 6rem;
     width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,6 +82,9 @@ export default {
 }
 
 .left{
+    max-width: 80vw;
+    width: 600px;
+    height: 435px;
     &-p{
         border-bottom: 2px solid rgba(123, 123, 123, 0.3);
         padding: 3rem 0rem;
@@ -102,5 +106,25 @@ export default {
         }
     }
 }
+@media (max-width: 960px){
+    .content{
+        margin: 0;
+    }
+    .header{
+        text-align: center;
+    }
+    .left{
+        height: fit-content;
+        margin: auto;
+        text-align: center;
+    }
+    .left_buttons{
+        justify-content: center;
+    }
+  
+
+
+}
+
     
 </style>

@@ -1,49 +1,49 @@
 <template lang="">
-    <div class='main'>
+    <div class='main main d-block d-md-flex'>
         <div class='header'>
-            <h2 class='header-h2'>Let's Meet Our <span class='header-talents'>Talents</span></h2>
+            <h2 class='header-h2 mb3'>Let's Meet Our <span class='header-talents'>Talents</span></h2>
 
-            <p class='header-p'>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
+            <p class='header-p mb1'>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
 
             <div class='d-block d-md-flex talent'>
-                <div>
+                <div class='card'>
                     <img src='@/assets/TalentCard.png'/>
                     <p class='p3'>Devon Lane</p>
                     <p class='talent-p'>CEO & Owner <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
-                <div>
+                <div class='card'>
                     <img src='@/assets/TalentCard2.png'/>
                     <p  class='p3'>Floyd Miles</p>
                     <p class='talent-p'>Digital Marketer <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
-                <div>
+                <div class='card'>
                     <img src='@/assets/TalentCard.png'/>
                     <p  class='p3'>Jane Cooper</p>
                     <p class='talent-p'>HRM <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
-                <div>
+                <div class='card'>
                     <img src='@/assets/TalentCard.png'/>
                     <p  class='p3'>Ronald Richards</p>
                     <p class='talent-p'>Strategist<img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
             </div>
             <div class='d-block d-md-flex talent'>
-                <div>
+                <div class='card'>
                     <img src='@/assets/TalentCard.png'/>
                     <p class='p3'>Devon Lane</p>
                     <p class='talent-p'>CEO & Owner <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
-                <div>
+                <div class='card'>
                     <img src='@/assets/TalentCard2.png'/>
                     <p  class='p3'>Floyd Miles</p>
                     <p class='talent-p'>Digital Marketer <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
-                <div>
+                <div class='card'>
                     <img src='@/assets/TalentCard.png'/>
                     <p  class='p3'>Jane Cooper</p>
                     <p class='talent-p'>HRM <img class='talent-img' src='@/assets/TalentSocials.png'/></p>
                 </div>
-                <div>
+                <div class='card'>
                     <img src='@/assets/TalentCard.png'/>
                     <p  class='p3'>Ronald Richards</p>
                     <p class='talent-p'>Strategist<img class='talent-img' src='@/assets/TalentSocials.png'/></p>
@@ -59,14 +59,14 @@ export default {
 </script>
 <style scoped lang="scss">
 .main{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    width: 1230px;
+    max-width: 80vw;
+    padding: 0 110px;
     margin-bottom: 10rem;
 }
 .header{
+    max-width: 80vw;
+
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -92,20 +92,22 @@ export default {
 
    &-p{
     text-align: center;
-    width: 30rem;
+    width: 526px;
+    max-width: 80vw;
    }
 
 }
 .talent{
+    width: 1230px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 100vw;
+    max-width: 80vw;
     justify-content: space-around;
 
     &-p{
         display: flex;
         justify-content: space-between;
-        max-width: 100vw;
+        max-width: 80vw;
     }
     &-img{
         object-fit: contain;
@@ -116,6 +118,23 @@ export default {
         font-family: 'Merriweather';
     }
 
+
+}
+.card{
+    max-width: 80vw;
+}
+@media (max-width: 960px){
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.header{
+    text-align: center;
+}
+.talent{
+    margin: auto;
+}
 
 }
     

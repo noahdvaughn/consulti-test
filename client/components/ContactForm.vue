@@ -5,9 +5,9 @@
             <h2 class='left-h1'>Ready to discuss projetc?</h2>
             <h2 class='left-h2'>Drop us a line</h2>
             <div>
-                <v-text-field label="Your Name*" variant="underlined"></v-text-field>
-                <v-text-field label="Type Your Email*" variant="underlined"></v-text-field>
-                <v-text-field label="Write Down You Query*" variant="underlined"></v-text-field>
+                <v-text-field v-model='name' label="Your Name*" variant="underlined"></v-text-field>
+                <v-text-field v-model='email' label="Type Your Email*" variant="underlined"></v-text-field>
+                <v-text-field v-model='message' label="Write Down You Query*" variant="underlined"></v-text-field>
                 <v-btn dark class='btn'>Send a Message</v-btn>
                 
             </div>
@@ -40,6 +40,13 @@
 </template>
 <script>
 export default {
+    data() {
+    return {
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
     
 }
 </script>

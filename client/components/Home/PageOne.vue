@@ -2,14 +2,14 @@
     <div class="main d-block d-md-flex" >
   
       <div class="left">
-        <h1 class="maintext">
+        <h1 class="left-mainText">
           Smooth <span class="span-business" >Business</span> <br>  Starts With Good <br><span class="span-consultations">Consultations</span>
         </h1>
         <p>
           Get the proper business consultation from CONSULTI. We are here to consult you as per your business need
         </p>
   
-        <div style="display: flex; margin-top: 3rem; margin-bottom: 6rem;">
+        <div style="margin-top: 3rem; margin-bottom: 6rem;" >
           <v-btn dark class="btn">Book a meeting</v-btn>
           <v-btn text class="btn">
             <v-icon left dark style="font-size: 2rem !important;">mdi-play-circle-outline</v-icon>
@@ -29,7 +29,7 @@
       </div> 
 
 
-      <img src="@/assets/HeaderImage.png" class="i"/>
+      <img src="@/assets/HeaderImage.png" class="image"/>
   
       
     </div>
@@ -46,29 +46,21 @@
   <style scoped lang="scss">
     .main{ 
       justify-content: space-between;
-      margin-bottom: 4rem;
-      width: 100vw;
-      overflow: none;
-      max-width: 100vw;
-      height: auto;
+      margin-bottom: 93px;
+      padding-left: 66px;
+      
     }
     .left{
-      width: 40rem;
+      width: 638px;
       padding-top: 2rem;
       max-width: 100vw;
+        &-mainText{
+          margin-bottom: 2rem;
+          max-width: 100vw;
+          text-align: start;
+        }
     }
-  .maintext{
-    font-size: 3.5rem;
-    text-align: center;
-    font-family: 'Merriweather';
-    font-weight: 700;
-    line-height: 5rem;
-    margin-bottom: 2rem;
-    max-width: 100vw;
-
-  }
-  .i{
-    width: 43rem;
+  .image{
     max-width: 100vw;
   }
   .span-business{
@@ -101,5 +93,20 @@
       
     }
   }
+  @media (max-width: 960px){
+    .main{
+      padding: 0;
+    }
+ .left{
+  margin: 0 auto;
+  text-align: center;
+  &-mainText{
+          text-align: center;
+ }
+}
+.card-meetingbtn{
+    margin-right: 0 !important;
+  }
+}
   </style>
   

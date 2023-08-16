@@ -1,8 +1,8 @@
 <template lang="">
-    <div class='main'>
+    <div class='main d-block d-md-flex'>
         <div class='header'>
             <h2>The art of creative thinking</h2>
-            <p>Read more about us. Our vission, mission, success and many other you might love</p>
+            <p class='header-p'>Read more about us. Our vission, mission, success and many other you might love</p>
             <p class='p4'> Home > Blog > the art of creative thinking</p>
         </div>
 
@@ -65,8 +65,8 @@
 
 
             <div class='right '>
+                <div class='right-grey'></div>
                 <div class='right-content shadow1'>
-                    <div class='right-grey'></div>
                     <div class='right-author'>                               
                         <p class='right-icon'> <v-icon >mdi-account-outline</v-icon> Admin</p>
                         <p class='right-icon'> <v-icon>mdi-calendar-blank-outline</v-icon>17 March, 2021</p>
@@ -101,7 +101,8 @@
                         <p class='p4 d-flex'>The 7 things Biden should do first to tackle climate change. <v-icon size='30px'>mdi-chevron-right</v-icon> </p>
                     </div>
                 </div>
-                <div class='comment-container shadow1'>
+
+                <div class='comment-container d-block d-md-flex shadow1'>
                     <p class='p3 comment-header'>Comments:</p>
                     <div class='comment d-flex '>
                         <v-icon class='comment-circle'>mdi-circle</v-icon>
@@ -180,8 +181,6 @@ export default {
 .form{
     padding: 15px;
 }
-
-
 .element-circle{
     color: #FD4C5C;
     font-size: 8px;
@@ -190,7 +189,7 @@ export default {
     font-size: 14px !important;
 }
 .main{
-    display: flex;
+    // display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10rem;
@@ -204,15 +203,18 @@ export default {
 }
 .comment-container{
     padding: 30px 30px;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     align-items: center;
     width: 810px;
     margin-bottom: 3rem;
+    max-width: 80vw;
+
 }
 .comment{
     margin: 3rem 0;
     width: 706px;
+    max-width: 80vw;
     align-items: flex-start;
     &-circle{
         color: #BDBDBD;
@@ -225,7 +227,6 @@ export default {
         margin-top: 1rem;
     }
     &-header{
-        // text-align: start;
         align-self: flex-start;
     }
     &-sub{
@@ -246,7 +247,6 @@ export default {
     justify-content: center;
     align-items: flex-start;
     max-width: 80vw;
-    // margin: 0 auto;
     &-grey{
         background-color: #BDBDBD;
         max-width: 80vw;
@@ -264,7 +264,7 @@ export default {
         margin-top: 2rem;
     }
     &-content{
-        
+        padding: 20px;
     }
     &-icon{
         margin-right: 2rem;
@@ -307,7 +307,6 @@ export default {
    &-p{
     font-size: 14px !important;
    }
-//    box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 50px 0 rgba(0, 0, 0, 0.1);
 
 }
 
@@ -327,16 +326,36 @@ export default {
 
 
 .header{
-    background-color: black;
+    background-color:black;
+    width: 100vw;
     color: white;
-    height: 20rem;
+    height: 352px;
     padding: 3rem 0;
     margin-bottom: 6rem;
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
+    &-p{
+        max-width: 80vw;
+    }
+
+}
+.header::before{
+    max-width: 100vw;
+    position: absolute;
+    height: 350px;
+    width: 1440px;
+    background-image: url('@/assets/group.png');
+    z-index: 0;
+    background-size: cover;
+    opacity: 0.075;
+    content: '';
+
+
 }
 
 .underline{
@@ -351,5 +370,28 @@ export default {
     text-align: start;
     margin-bottom: 3rem;
 }
+@media (max-width: 960px){
+    .content{
+        padding: 0;
+    }
+    .header{
+        text-align: center;
+    }
+    .left{
+        margin-right: 0;
+    }
+    .comment{
+        margin: 0;
+    }
+    .left, .right, .main, .comment{
+        margin: auto;
+        
+    }
+    .comment-container{
+        padding: 0;
+        margin: 0;
+    }
+}
+
     
 </style>

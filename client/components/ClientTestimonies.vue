@@ -74,13 +74,14 @@ padding-bottom: 10rem;
 }
 .header-p{
     text-align: center;
-    width: 40vw;
+    width: 504px;
+    max-width: 100vw;
     margin: auto;
 }
 
 .card{
-    height: 30rem;
-    width: 25rem;
+    height: 443px;
+    width: 372px;
     max-width: 100vw;
     text-align: center;
     padding: 2rem 5rem;
