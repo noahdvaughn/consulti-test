@@ -22,9 +22,6 @@ export default {
     margin-bottom: 10rem;
     max-width: 100vw;
 }
-// .title{
-//     max-width: 100vw;
-// }
 .img{
     max-width: 100vw;
 }

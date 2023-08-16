@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "core-js": "^3.25.3",
+    "express": "^4.18.2",
     "nuxt": "^2.15.8",
+    "vee-validate": "3",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
-    "vuetify": "^2.6.10"
+    "vuetify": "^2.6.10",
+    "vuex-map-fields": "^1.4.1"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.3"
