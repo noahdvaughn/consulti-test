@@ -86,8 +86,14 @@ export default {
 
     &-h1{
         font-family: 'Inter';
+        width: 381px;
+        max-width: 50vw;
+        font-size: 36px !important;
+        line-height: 51px;
+        font-weight: 400;
+
         
-        width: 27rem;
+        // width: 27rem;
     }
    
 }

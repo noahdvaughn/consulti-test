@@ -14,9 +14,6 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.main{
-    
-}
 .content{
     margin: 0 10vw;
     &-img{

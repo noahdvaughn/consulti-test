@@ -182,6 +182,7 @@ height: 36px;
 .button-p{
     text-transform: none;
     font-weight: 400;
+    letter-spacing: normal;
 }
 .buttons{
     display: flex ;
