@@ -44,7 +44,7 @@
                                 :counter="10"
                                 required
                                 label='Enter your name*' 
-                                class='mb1' 
+                               
                                 v-model='name'
                                 >
                         </v-text-field>
@@ -60,7 +60,7 @@
                         solo 
                         :error-messages="errors"      
                         label='Enter your email address*' 
-                        class='mb1'
+                        
                         required
                         v-model='email'
                         ></v-text-field>
@@ -77,7 +77,7 @@
                          background-color=#FCFCFC 
                          v-model='message' 
                         :error-messages="errors"      
-                         class='mb1'>
+                         >
                             <template v-slot:label>
                                 <div>Write your message</div>
                             </template>
@@ -85,7 +85,7 @@
                     </validation-provider>
 
                    
-                    <v-btn dark class='btn' :disabled="invalid" type='submit'>Send Message</v-btn>
+                    <v-btn class='btn validate' :disabled='invalid' type='submit'>Send Message</v-btn>
                 </form>
             </validation-observer>
 
@@ -95,15 +95,10 @@
     </div>
 </template>
 <script>
-import { required, digits, email, max, regex } from 'vee-validate/dist/rules'
+import { required, email, max,  min } from 'vee-validate/dist/rules'
 import { extend, ValidationObserver, ValidationProvider, setInteractionMode } from 'vee-validate'
 import { mapFields } from 'vuex-map-fields'
-setInteractionMode('eager')
-
-extend('digits', {
-    ...digits,
-    message: '{_field_} needs to be {length} digits. ({_value_})',
-  })
+// setInteractionMode('eager')
 
   extend('required', {
     ...required,
@@ -114,12 +109,10 @@ extend('digits', {
     ...max,
     message: '{_field_} may not be greater than {length} characters',
   })
-
-  extend('regex', {
-    ...regex,
-    message: '{_field_} {_value_} does not match {regex}',
+  extend('min', {
+    ...min,
+    message: '{_field_} may not be less than {length} characters',
   })
-
   extend('email', {
     ...email,
     message: 'Email must be valid',
@@ -132,18 +125,28 @@ export default {
       ValidationObserver,
     },
     methods: {
-      submit () {
-        this.$refs.observer.validate()
+      async submit () {
+        const isValid = await this.$refs.observer.validate();
+        console.log('hit')
         if (!isValid) {
-        // ABORT!!
-      }
+           console.log('invalid')
+            
+        } else {
+            await this.$axios.$post('/api/email', {
+                name: this.name,
+                email: this.email,
+                message: this.message
+            })
+
+            
+            
+        }
+        this.clear()
       },
       clear () {
         this.name = ''
-        this.phoneNumber = ''
         this.email = ''
-        this.select = null
-        this.checkbox = null
+        this.message = ''
         this.$refs.observer.reset()
       },
     },
@@ -153,6 +156,12 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+.validate{
+    height: 59px;
+    width: 173px;
+    background-color: black !important;
+    color: white !important;
+}
 .card{
     width: 389px;
     height: 230px;
@@ -199,6 +208,7 @@ export default {
     width: 569px;
     height: 470px;
     padding: 30px;
+    position: relative;
 }
 @media (max-width: 960px){
   .content{

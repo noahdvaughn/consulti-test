@@ -18,6 +18,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  // env: {
+  //   SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
+  // },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -34,11 +37,17 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+
   ],
+  axios: {
+    // proxy: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+     '@nuxtjs/axios'
   ],
+  serverMiddleware: ['~/server-middleware/index.js'],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
