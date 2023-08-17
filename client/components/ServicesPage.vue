@@ -1,5 +1,5 @@
 <template lang="">
-    <div class='main'>
+    <div class='main d-block d-md-flex'>
         <div class='header'>
             <h2 class='mb1'>We Serve Those Services For <span class='header__you'>You</span></h2>
             <p class='header-p'>We serve services as per your needs. Here you will get all of the services list that we will provide you</p>
@@ -69,7 +69,7 @@ export default {
     background-size: cover;
     width: 100vw;
     height: auto;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 7rem;
@@ -104,7 +104,8 @@ export default {
 .header{
     text-align: center;
     color: white;
-    width: 60vw;
+    // width: 60vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,6 +113,7 @@ export default {
     &-p{
         opacity: 0.5;
         width: 595px;
+        max-width: 100vw;
     }
     &__you{
         position: relative;
@@ -155,5 +157,22 @@ export default {
         opacity: 0.5;
     }
 }
+@media (max-width: 960px){
+    .card{
+        margin: auto;
+        max-width: 80vw;
+        // padding: auto;
+        height: fit-content;
+    }
+    .main{
+        margin: auto;
+    }
+    .bottom{
+        margin: auto;
+    }
+
+
+}
+
     
 </style>
