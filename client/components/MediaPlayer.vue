@@ -1,7 +1,7 @@
 <template lang="">
     <div class='main'>
 
-        <h2 class='title'>Take A Vital Look At Our Core <br> <span class='working'>Working Process</span></h2>
+        <h2>Take A Vital Look At Our Core <br> <span class='working'>Working Process</span></h2>
 
         <p>Get the proper business consultation from CONSULTI. We are here to consult you as per your business need</p>
         <img class='img' src='@/assets/Player.png' />
@@ -27,7 +27,7 @@ export default {
 }
 .working{
     background-image: url('@/assets/dropline.png');
-        background-position: 0rem 1rem; 
+        background-position: 0rem 1.5rem; 
         background-size: contain;      
 }
 
