@@ -1,7 +1,7 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h1>Services</h1>
+            <h2>Services</h2>
             <p>Read more about us. Our vission, mission, success and many other you might love</p>
             <p class='p4'> Home > Services</p>
         </div>

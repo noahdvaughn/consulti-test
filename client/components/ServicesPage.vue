@@ -67,13 +67,11 @@ export default {
 .main{
     background-image: url('@/assets/page3background.png');
     background-size: cover;
-    width: 100vw;
-    height: auto;
-    // display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 7rem;
     margin-bottom: 3rem;
+    max-width: 100vw;
 }
 .banner{
     background-color: #F6E96F ;

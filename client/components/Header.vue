@@ -2,23 +2,24 @@
     <div class="main">
 
         <nuxt-link to="/" class="link">
-        
             <img src="@/assets/consulti.png" class="logo"/>
         </nuxt-link>
         
 
 
         <div class="navbar d-none d-md-flex">
-            <div class="navbar-item">
-                <p>Home</p>
-                <v-menu>
+            <div class="navbar-item" id="attachId">
+                
+                <v-menu offset-y fixed attach="#attachId">
                     <template  v-slot:activator="{ on, attrs }">
-                <v-btn icon v-bind="attrs" v-on="on">
-                    <v-icon class="header__nav__item__chevron" size="1rem" >mdi-chevron-down
+                <v-btn v-bind="attrs" v-on="on" text>
+                    <p class="button-p">Home
+                    <v-icon class="chevron" size="1rem" >mdi-chevron-down
                     </v-icon>
+                    </p>
                 </v-btn>
             </template>
-            <v-list  class="">
+            <v-list class="navbar-menu">
                     <nuxt-link to="/" class="link">
                         <v-list-item >
                             <v-list-item-title @click=""  class="">
@@ -44,16 +45,18 @@
                 </v-list>
                 </v-menu>
             </div>
-            <div class="navbar-item">
-                <p>About</p>
-                <v-menu>
+            <div class="navbar-item" id="attachId">
+                
+                <v-menu offset-y fixed attach="#attachId">
                     <template  v-slot:activator="{ on, attrs }">
-                <v-btn icon v-bind="attrs" v-on="on">
-                    <v-icon class="header__nav__item__chevron" size="1rem" >mdi-chevron-down
+                <v-btn v-bind="attrs" v-on="on" text >
+                    <p class="button-p">About
+                    <v-icon class="chevron" size="1rem" >mdi-chevron-down
                     </v-icon>
+                    </p>
                 </v-btn>
             </template>
-            <v-list  >
+            <v-list >
                 <nuxt-link to="/about" class="link">
                 <v-list-item >
                     <v-list-item-title @click=""  class="">
@@ -66,13 +69,15 @@
                 </v-list>
                 </v-menu>
             </div>
-            <div class="navbar-item">
-                <p>Services</p>
-                <v-menu>
+            <div class="navbar-item" id="attachId">
+                
+                <v-menu offset-y fixed attach="#attachId">
                     <template  v-slot:activator="{ on, attrs }">
-                <v-btn icon v-bind="attrs" v-on="on">
-                    <v-icon class="header__nav__item__chevron" size="1rem" >mdi-chevron-down
+                <v-btn  v-bind="attrs" v-on="on" text>
+                    <p class="button-p">Services
+                    <v-icon class="chevron" size="1rem" >mdi-chevron-down
                     </v-icon>
+                    </p>
                 </v-btn>
             </template>
             <v-list  class="">
@@ -148,22 +153,19 @@ export default {
     color: black;
 }
 .logo{
-width: 10rem;
-height: auto;
-object-fit: contain;
+width: 138px;
+height: 36px;
 }
 .navbar{
+    width: 570px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
-.buttons{
-    display: flex ;
+    position: relative;
 
-}
-.navbar-item{
-    display: flex;
+    &-item{
+        display: flex;
     align-items: center;
     justify-content: center;
     text-transform: none;
@@ -171,7 +173,20 @@ object-fit: contain;
     width: 5rem;
 
 }
-.header__nav__item__chevron{
+
+    &-menu{
+        position: sticky;
+    }
+
+}
+.button-p{
+    text-transform: none;
+    font-weight: 400;
+}
+.buttons{
+    display: flex ;
+}
+.chevron{
     color: black;
 }
 
