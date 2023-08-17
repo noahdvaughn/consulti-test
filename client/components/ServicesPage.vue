@@ -91,9 +91,6 @@ export default {
         font-size: 36px !important;
         line-height: 51px;
         font-weight: 400;
-
-        
-        // width: 27rem;
     }
    
 }

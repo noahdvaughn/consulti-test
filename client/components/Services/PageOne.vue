@@ -27,10 +27,10 @@ export default {
 .header{
     background-color: black;
     color: white;
-    height: 20rem;
+    height: 350px;
     padding: 3rem 0;
     margin-bottom: 6rem;
-    width: 100vw;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
