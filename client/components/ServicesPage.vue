@@ -1,7 +1,7 @@
 <template lang="">
     <div class='main d-block d-md-flex'>
         <div class='header'>
-            <h2 class='mb1'>We Serve Those Services For <span class='header__you'>You</span></h2>
+            <h2 class='mb1 header-p2'>We Serve Those Services For <span class='header__you'>You</span></h2>
             <p class='header-p'>We serve services as per your needs. Here you will get all of the services list that we will provide you</p>
         </div>
 
@@ -164,12 +164,22 @@ export default {
         max-width: 80vw;
         // padding: auto;
         height: fit-content;
+        margin-bottom: 10px;
     }
     .main{
         margin: auto;
     }
     .bottom{
         margin: auto;
+    }
+    .banner-h1{
+        font-size: 24px !important;
+    }
+    .banner{
+        margin: 0;
+    }
+    .header-p2{
+        width: 100vw;
     }
 
 

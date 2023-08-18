@@ -153,12 +153,22 @@ export default {
     justify-content: space-between;
     width: 100%;
     padding: 0 3rem;
-    height: 13rem;
+    height: 209px;
 }
 .copyright{
     padding: 1rem 0;
     text-align: center;
     opacity: 0.7;
 }
+@media (max-width: 960px){
+
+    .stack{
+        margin-bottom: 20px;
+        height: 150px;
+        text-align: center;
+    }
+
+}
+
     
 </style>

@@ -199,4 +199,10 @@ export default {
 
         }
     }
+@media (max-width: 960px){
+    .left{
+        margin-bottom: 20px;
+    }
+}
+
 </style>

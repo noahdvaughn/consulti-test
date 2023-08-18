@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class='card'>
-                <div class='card-background'></div>
+                <div class='card-background '></div>
                 <div class='card-content'>
 
                     <p>ADVICE -</p>
@@ -45,9 +45,12 @@ export default {
     margin-bottom: 4rem;
     &-h2{
         margin-bottom: 4rem;
+        max-width: 100vw;
     }
     &-p{
-        width: 40vw;
+        // width: 40vw;
+        width: 534px;
+        max-width: 80vw;
         margin: auto;
     }
     &-articles{  
@@ -77,7 +80,7 @@ export default {
         width: 600px;
         height: 399px;
         max-width: 70vw;
-        background-color: #BDBDBD ;
+        background-color: #BDBDBD;
         border-radius: 10px;
     }
     &-content{
@@ -98,6 +101,24 @@ export default {
 .content{
     justify-content: space-around;
 }
+@media (max-width: 960px){
+
+    .card{
+        // height: fit-content !important;
+        margin: auto !important;
+
+        &-content{
+            margin-top: 0 !important;
+            height: fit-content;
+        }
+        &-background{
+            // height: 200px;
+            // width: 200px;
+            margin: auto !important;
+        }
+    }
+}
+
 
     
 </style>

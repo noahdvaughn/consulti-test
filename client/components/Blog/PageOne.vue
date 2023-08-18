@@ -2,7 +2,7 @@
     <div class='main'>
 
         <div class='header'>
-            <h2>Blog</h2>
+            <h2 class='header-h2'>Blog</h2>
             <p>Read more about us. Our vission, mission, success and many other you might love</p>
             <p class='p4'> Home > Blog</p>
         </div>
@@ -282,7 +282,6 @@ export default {
     text-transform: none !important;
     border: 1px solid black;
     border-radius: 0;
-    // font-size: 1rem;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -304,6 +303,10 @@ export default {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+
+    &-h2{
+        max-width: 100vw;
+    }
 }
 
 

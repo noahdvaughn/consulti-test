@@ -2,7 +2,7 @@
     <div class='main'>
         <div class='header'>
             <h2>The art of creative thinking</h2>
-            <p>Read more about us. Our vission, mission, success and many other you might love</p>
+            <p class='header-p2'>Read more about us. Our vission, mission, success and many other you might love</p>
             <p class='p4'> Home > Blog > the art of creative thinking</p>
         </div>
         <div class='content d-block d-md-flex'>
@@ -35,13 +35,13 @@
                         <validation-provider  
                             v-slot="{ errors }" 
                             name="Name" 
-                            rules="required|max:10"
+                            rules="required|max:20"
                             >
                                 <v-text-field background-color=#FCFCFC 
                                 flat 
                                 solo 
                                 :error-messages="errors"
-                                :counter="10"
+                                :counter="20"
                                 required
                                 label='Enter your name*' 
                                
@@ -177,7 +177,6 @@ export default {
     height: 352px;
     padding: 3rem 0;
     margin-bottom: 6rem;
-    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -211,11 +210,17 @@ export default {
     position: relative;
 }
 @media (max-width: 960px){
+    .header{
+        text-align: center;
+        &-p{
+            width: 100vw;
+        }
+    }
   .content{
     margin: auto;
     height: fit-content;
     &-image{
-        
+        max-width: 100vw;
     }
   }
   .content-bottom{

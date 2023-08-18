@@ -101,6 +101,21 @@ padding-bottom: 10rem;
         box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 50px 0 rgba(0, 0, 0, 0.1);
     }
 }
+@media (max-width: 960px){
+
+    .card{
+        margin: auto;
+    }
+    .some:before{
+    right: 50px;
+    top: 0px;
+    height: 60px;
+    width: 60px;
+
+    }
+
+
+}
 
     
 </style>

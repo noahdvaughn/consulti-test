@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <div class='header'>
-            <h2>Frequently Asked Question</h2>
+            <h2 class='header-p2'>Frequently Asked Question</h2>
             <p>Read more about us. Our vission, mission, success and many other you might love</p>
             <p class='p4'> Home > FAQ</p>
         </div>
@@ -161,6 +161,7 @@ export default {
 .right{
     width: 746px;
     height: 470px;
+    max-width: 100vw;
 
     &-underline{
         height: 0px;
@@ -170,5 +171,25 @@ export default {
         border-bottom: 1px solid #1A1A1A !important;
     }
 }
+@media (max-width: 960px){
+    .header{
+        text-align: center;
+        &-p2{
+            max-width: 100vw;
+        }
+    }
+    .left{
+        margin: auto;
+    }
+    .content{
+        padding: 0;
+        margin: auto;
+    }
+    .right{
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
     
 </style>

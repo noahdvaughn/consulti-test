@@ -1,7 +1,7 @@
 <template lang="">
     <div class='main'>
         <div class='header'>
-            <h2>Our Advisors</h2>
+            <h2 class='header-h2'>Our Advisors</h2>
             <p>Read more about us. Our vission, mission, success and many other you might love</p>
             <p class='p4'> Home > Advisor</p>
         </div>
@@ -38,6 +38,11 @@ export default {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    &-h2{
+        max-width: 100vw;
+        width: 436px;
+    }
     &-to{
         position: relative;
         display: inline-block;
@@ -80,6 +85,9 @@ export default {
             text-transform: none;
         }
     }
+}
+@media (max-width: 960px){
+
 }
     
 </style>
